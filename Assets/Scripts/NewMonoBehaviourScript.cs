@@ -8,6 +8,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     void Start()
     {
         health = 10;
+
+        // hi 
     }
 
     // Update is called once per frame
