@@ -24,7 +24,6 @@ public class CameraMovement : MonoBehaviour
         if (isTransitioning)
         {
             // Smoothly move the camera to focus on the new wave
-            // targetYLimitMin + targetYLimitMax) / 2 -> to have the camera focous on the middle of the wave
             Vector3 targetPosition = new Vector3(transform.position.x, (targetYLimitMin + targetYLimitMax) / 2, transform.position.z);
             transform.position = Vector3.Lerp(transform.position, targetPosition, transitionSpeed * Time.deltaTime);
 
@@ -35,9 +34,9 @@ public class CameraMovement : MonoBehaviour
             }
         }
         else
-        { 
-            // #3 Follow the player, allowing the camera to show half of the adjacent wave            
-            float clampedY = Mathf.Clamp(player.position.y,targetYLimitMin - additionalViewRange,targetYLimitMax + additionalViewRange);
+        {
+            // Follow the player, allowing the camera to show part of the adjacent wave
+            float clampedY = Mathf.Clamp(player.position.y, targetYLimitMin - additionalViewRange, targetYLimitMax + additionalViewRange);
             Vector3 desiredPosition = new Vector3(transform.position.x, clampedY, transform.position.z);
             transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
         }
@@ -49,5 +48,19 @@ public class CameraMovement : MonoBehaviour
         targetYLimitMin = newMinLimit;
         targetYLimitMax = newMaxLimit;
         isTransitioning = true;
+
+        // Update the camera's current y-axis limits
+        yLimitRange = new Vector2(newMinLimit, newMaxLimit);
+
+        // Notify the player to update its vertical limits
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
+            if (playerMovement != null)
+            {
+                playerMovement.UpdateVerticalLimits(newMinLimit, newMaxLimit);
+            }
+        }
     }
 }

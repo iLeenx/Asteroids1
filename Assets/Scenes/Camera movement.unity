@@ -545,8 +545,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMovement: {fileID: 519420033}
-  nextWaveMinY: -32.5
-  nextWaveMaxY: -27.5
+  nextWaveMinY: -35
+  nextWaveMaxY: -25
 --- !u!212 &450740660
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -695,8 +695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMovement: {fileID: 519420033}
-  nextWaveMinY: -2.5
-  nextWaveMaxY: 2.5
+  nextWaveMinY: -5
+  nextWaveMaxY: 5
 --- !u!212 &473583816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -921,7 +921,7 @@ MonoBehaviour:
   smoothSpeed: 2
   yLimitRange: {x: -10, y: 10}
   transitionSpeed: 3
-  additionalViewRange: 5
+  additionalViewRange: 10
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,8 +1258,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMovement: {fileID: 519420033}
-  nextWaveMinY: -22.5
-  nextWaveMaxY: -17.5
+  nextWaveMinY: -25
+  nextWaveMaxY: -15
 --- !u!212 &854074224
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1696,8 +1696,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMovement: {fileID: 519420033}
-  nextWaveMinY: -12.5
-  nextWaveMaxY: -7.5
+  nextWaveMinY: -15
+  nextWaveMaxY: -5
 --- !u!212 &1059231753
 SpriteRenderer:
   m_ObjectHideFlags: 0
