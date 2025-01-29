@@ -1,29 +1,31 @@
 using UnityEngine;
-
-public class SpiderProjectile : MonoBehaviour
+namespace Descent
 {
-    public float lifetime = 5f; // Time before the projectile is destroyed
-
-    private void Start()
+    public class SpiderProjectile : MonoBehaviour
     {
-        Destroy(gameObject, lifetime); // Destroy the projectile after a set time
-    }
+        public float lifetime = 5f; // Time before the projectile is destroyed
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
+        private void Start()
         {
-            // Example: Damage the player
-            Debug.Log("Projectile hit the player!");
-            // Destroy the projectile
-            Destroy(gameObject);
+            Destroy(gameObject, lifetime); // Destroy the projectile after a set time
         }
 
-        if (other.CompareTag("Environment"))
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            // Destroy the projectile when hitting the environment
-            Debug.Log("Projectile hit the environment!");
-            Destroy(gameObject);
+            if (other.CompareTag("Player"))
+            {
+                // Example: Damage the player
+                Debug.Log("Projectile hit the player!");
+                // Destroy the projectile
+                Destroy(gameObject);
+            }
+
+            if (other.CompareTag("Environment"))
+            {
+                // Destroy the projectile when hitting the environment
+                Debug.Log("Projectile hit the environment!");
+                Destroy(gameObject);
+            }
         }
     }
 }
