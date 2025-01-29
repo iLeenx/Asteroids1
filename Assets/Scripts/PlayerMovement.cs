@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float runSpeed = 5f;
     Collider2D myCollider;
 
-    private float horizontalLimit = 3f; // Horizontal movement limit relative to the camera center
+    private float horizontalLimit = 7f; // Horizontal movement limit relative to the camera center
     private float maxVerticalLimit; // Upper vertical movement limit
     private float minVerticalLimit; // Lower vertical movement limit
 
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         float controlDirection_y = Input.GetAxis("Vertical");
 
         Vector2 playerVelocity = new Vector2(controlDirection_x * runSpeed, controlDirection_y * runSpeed);
-        myRigidbody.velocity = playerVelocity;
+        myRigidbody.linearVelocity = playerVelocity;
 
         // Flip the player sprite based on horizontal movement
         if (controlDirection_x < 0)
