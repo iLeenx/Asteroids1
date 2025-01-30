@@ -18,19 +18,31 @@ public class PlayerShield : MonoBehaviour
 
     void Start()
     {
-        shieldObject.SetActive(false);
+        shieldObject.SetActive(false); // Ensure the shield is off at the start
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(activationKey) && !isShieldActive && !isOnCooldown)
+        // Check if the mouse button is held down
+        if (Input.GetKey(activationKey) && !isShieldActive && !isOnCooldown)
         {
             StartCoroutine(ActivateShield());
         }
 
-        if (Input.GetKeyDown(activationKey) && isOnCooldown == true)
+        // Check if the shield should be deactivated after the mouse button is released
+        if (Input.GetKeyUp(activationKey) && isShieldActive)
         {
-            Debug.Log("wait for the cool down!");
+            StopCoroutine(ActivateShield()); // Stop the shield activation coroutine if it's running
+            shieldObject.SetActive(false);
+            isShieldActive = false;
+            
+            // Start cooldown after release
+            StartCoroutine(Cooldown());
+        }
+
+        if (Input.GetKeyDown(activationKey) && isOnCooldown)
+        {
+            Debug.Log("Wait for the cooldown!");
         }
     }
 
@@ -43,10 +55,16 @@ public class PlayerShield : MonoBehaviour
         // Wait for the shield duration
         yield return new WaitForSeconds(shieldDuration);
 
-        // Deactivate the shield
-        shieldObject.SetActive(false);
-        isShieldActive = false;
+        // Deactivate the shield if the button is not released before duration
+        if (isShieldActive)
+        {
+            shieldObject.SetActive(false);
+            isShieldActive = false;
+        }
+    }
 
+    IEnumerator Cooldown()
+    {
         // Start cooldown
         isOnCooldown = true;
         yield return new WaitForSeconds(cooldownTime);
