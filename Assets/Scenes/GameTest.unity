@@ -1861,7 +1861,7 @@ MonoBehaviour:
   shieldObject: {fileID: 1071901413}
   shieldDuration: 5
   cooldownTime: 5
-  activationKey: 32
+  activationKey: 324
 --- !u!1 &1041082705
 GameObject:
   m_ObjectHideFlags: 0

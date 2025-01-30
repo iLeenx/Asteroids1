@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
+namespace Descent
+{
 public class PlayerShield : MonoBehaviour
 {
     [Header("Shield Settings")]
@@ -59,4 +61,5 @@ public class PlayerShield : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+}
 }
