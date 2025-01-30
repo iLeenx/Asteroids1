@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - WebShot
   - Environment
   - Mob
+  - Bullet
   layers:
   - Default
   - TransparentFX
