@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
+namespace Descent
+{
 public class PlayerShield : MonoBehaviour
 {
     [Header("Shield Settings")]
@@ -14,34 +16,49 @@ public class PlayerShield : MonoBehaviour
     private bool isShieldActive = false;
     private bool isOnCooldown = false;
 
-    void Update()
-    {
-        if (Input.GetKeyDown(activationKey) && !isShieldActive && !isOnCooldown)
+        void Start()
         {
-            Debug.Log("if statment");
-            StartCoroutine(ActivateShield());       
+            shieldObject.SetActive(false); // Ensure the shield is off initially
         }
-    }
 
-    IEnumerator ActivateShield()
-    {
-        Debug.Log("triggered");
-        // Activate the shield
-        isShieldActive = true;
-        shieldObject.SetActive(true);
+        void Update()
+        {
+            // Activate the shield while holding mouse button 1
+            if (Input.GetKey(activationKey) && !isShieldActive && !isOnCooldown)
+            {
+                StartCoroutine(ActivateShield());
+            }
 
-        // Wait for the shield duration
-        yield return new WaitForSeconds(shieldDuration);
+            // Check cooldown status if trying to press mouse 1 again
+            if (Input.GetKeyDown(activationKey) && isOnCooldown)
+            {
+                Debug.Log("Shield is on cooldown!");
+            }
+        }
 
-        // Deactivate the shield
-        shieldObject.SetActive(false);
-        isShieldActive = false;
+        IEnumerator ActivateShield()
+        {
+            // Activate the shield
+            isShieldActive = true;
+            shieldObject.SetActive(true);
 
-        // Start cooldown
-        isOnCooldown = true;
-        yield return new WaitForSeconds(cooldownTime);
-        isOnCooldown = false;
-    }
+            // Wait for the shield duration or until the button is released
+            float timer = 0f;
+            while (Input.GetKey(activationKey) && timer < shieldDuration)
+            {
+                timer += Time.deltaTime;
+                yield return null;
+            }
+
+            // Deactivate the shield when the duration ends or the button is released
+            shieldObject.SetActive(false);
+            isShieldActive = false;
+
+            // Start cooldown
+            isOnCooldown = true;
+            yield return new WaitForSeconds(cooldownTime);
+            isOnCooldown = false;
+        }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -51,4 +68,5 @@ public class PlayerShield : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+}
 }

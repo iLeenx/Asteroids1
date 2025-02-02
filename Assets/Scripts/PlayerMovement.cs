@@ -43,11 +43,11 @@ namespace Descent
             // Flip the player sprite based on horizontal movement
             if (controlDirection_x < 0)
             {
-                transform.localScale = new Vector3(-0.45199f, 0.45199f, 0.45199f);
+                transform.localScale = new Vector3(-1, 1, 1);
             }
             else if (controlDirection_x > 0)
             {
-                transform.localScale = new Vector3(0.45199f, 0.45199f, 0.45199f);
+                transform.localScale = new Vector3(1, 1, 1);
             }
         }
 
