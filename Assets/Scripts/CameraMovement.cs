@@ -61,7 +61,7 @@ namespace Descent
                 PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
                 if (playerMovement != null)
                 {
-                    playerMovement.UpdateVerticalLimits(newMinLimit, newMaxLimit);
+                    //playerMovement.UpdateVerticalLimits(newMinLimit, newMaxLimit);
                 }
             }
         }
