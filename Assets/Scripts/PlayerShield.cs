@@ -14,26 +14,18 @@ public class PlayerShield : MonoBehaviour
     private bool isShieldActive = false;
     private bool isOnCooldown = false;
 
-    void Start()
-    {
-        shieldObject.SetActive(false);
-    }
-
     void Update()
     {
         if (Input.GetKeyDown(activationKey) && !isShieldActive && !isOnCooldown)
         {
-            StartCoroutine(ActivateShield());
-        }
-
-        if (Input.GetKeyDown(activationKey) && isOnCooldown == true)
-        {
-            Debug.Log("wait for the cool down!");
+            Debug.Log("if statment");
+            StartCoroutine(ActivateShield());       
         }
     }
 
     IEnumerator ActivateShield()
     {
+        Debug.Log("triggered");
         // Activate the shield
         isShieldActive = true;
         shieldObject.SetActive(true);
