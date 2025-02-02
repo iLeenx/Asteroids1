@@ -1,16 +1,31 @@
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void ResetGame()
     {
-        
+        ResetCamera();
+        ResetPlayer();
+        ResetUpgradesToDefualt();
+        ResetMobs();
     }
-
-    // Update is called once per frame
-    void Update()
+    //
+    public void ResetCamera()
     {
-        
+        // camera goes back to it's og position
     }
+    public void ResetPlayer()
+    {
+        // player goes back to it's og position
+    }
+    public void ResetUpgradesToDefualt()
+    {
+        // 
+    }
+    public void ResetMobs()
+    {
+        // reset waves
+    }
+    
 }
