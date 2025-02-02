@@ -1,5 +1,4 @@
 using UnityEngine;
-
 namespace Descent
 {
     public class CameraMovement : MonoBehaviour
