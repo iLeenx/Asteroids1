@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5509806237524337423}
   - component: {fileID: 6649275572619325526}
   - component: {fileID: 1988975041653398438}
+  - component: {fileID: 1865894880865946627}
   m_Layer: 7
   m_Name: Spider
-  m_TagString: Untagged
+  m_TagString: Mob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,3 +187,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1865894880865946627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4421911731480527722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56fc35273f83304d818c42663ef7eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: PlayerBullet
+  destroyDelay: 0
+  maxHealth: 1
+  currentHealth: 1
+  destroyOnZeroHealth: 1
