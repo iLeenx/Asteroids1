@@ -233,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7183396817449996256, guid: 6b52126d1c6a10641a1ac7c69ef0e3b7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7517417050839331958, guid: 6b52126d1c6a10641a1ac7c69ef0e3b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5376,9 +5376,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2031299871}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a38659d5b8c88ba4ca77b8f17aaab0ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 9905c97b4c2327c46b079613e558753e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxFuel: 100
+  fuelDepletionRate: 5
+  fuelBarPrefab: {fileID: 0}
+  fuelPanel: {fileID: 0}
+  spacing: 5
+  barOffset: {x: 0, y: 0}
+  deathEffect: {fileID: 0}
 --- !u!114 &2031299874
 MonoBehaviour:
   m_ObjectHideFlags: 0
