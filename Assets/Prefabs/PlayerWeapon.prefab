@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6781800174935450345}
-  - component: {fileID: 1271914592317036190}
   - component: {fileID: 271980592639577235}
+  - component: {fileID: 1271914592317036190}
   m_Layer: 0
   m_Name: PlayerWeapon
   m_TagString: Untagged
@@ -34,6 +34,29 @@ Transform:
   - {fileID: 6811446704901779559}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &271980592639577235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376914780413412977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f71e9ead2206694db58bb56237144e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 6403023041546394752}
+  projectilePrefab: {fileID: 4605145424756468326, guid: 21ade53850664e44b9a952610891e997, type: 3}
+  projectileCount: 1
+  spreadAngle: 0
+  projectileSpeed: 20
+  fireButton: Fire1
+  fireRate: 0.5
+  isEnabled: 1
+  maxAmmo: 10
+  currentAmmo: 10
+  infiniteAmmo: 0
 --- !u!114 &1271914592317036190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,26 +82,6 @@ MonoBehaviour:
   inheritPositionY: 1
   inheritPositionZ: 1
   inheritRotation: 0
---- !u!114 &271980592639577235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376914780413412977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f71e9ead2206694db58bb56237144e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 6403023041546394752}
-  projectilePrefab: {fileID: 4605145424756468326, guid: 21ade53850664e44b9a952610891e997, type: 3}
-  projectileCount: 1
-  spreadAngle: 0
-  projectileSpeed: 20
-  fireButton: Fire1
-  fireRate: 0.5
-  isEnabled: 1
 --- !u!1 &4474313853263119571
 GameObject:
   m_ObjectHideFlags: 0
