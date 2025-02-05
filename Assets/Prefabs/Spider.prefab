@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 8721873943326981416}
   - component: {fileID: 4970268701502092842}
   - component: {fileID: 5509806237524337423}
-  - component: {fileID: 1988975041653398438}
-  - component: {fileID: 1865894880865946627}
   - component: {fileID: 2468487145804511720}
+  - component: {fileID: 4505443109272058015}
   m_Layer: 7
   m_Name: Spider
   m_TagString: Mob
@@ -110,50 +109,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6773961577539732898, guid: ed1f4dd09dcff684e8af69a85658152d, type: 3}
   projectileSpeed: 5
   shootInterval: 2
---- !u!50 &1988975041653398438
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4421911731480527722}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &1865894880865946627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4421911731480527722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d56fc35273f83304d818c42663ef7eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetTag: PlayerBullet
-  destroyDelay: 0
-  maxHealth: 1
-  currentHealth: 1
-  destroyOnZeroHealth: 1
 --- !u!70 &2468487145804511720
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -191,3 +146,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.81}
   m_Size: {x: 1.85, y: 2.56}
   m_Direction: 0
+--- !u!114 &4505443109272058015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4421911731480527722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1aec60f73fbbe84ca065a19f7100862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: PlayerBullet
+  destroyDelay: 0
+  maxHealth: 2
+  currentHealth: 10
+  destroyOnZeroHealth: 1
