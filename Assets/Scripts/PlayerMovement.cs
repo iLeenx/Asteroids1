@@ -4,7 +4,7 @@ namespace Descent
     public class PlayerMovement : MonoBehaviour
     {
         Rigidbody2D myRigidbody;
-        [SerializeField] float runSpeed = 5f;
+        [SerializeField] float runSpeed = 2f;
         Collider2D myCollider;
 
         private float horizontalLimit = 7f; // Horizontal movement limit relative to the camera center
@@ -40,23 +40,15 @@ namespace Descent
             Vector2 playerVelocity = new Vector2(controlDirection_x * runSpeed, controlDirection_y * runSpeed);
             myRigidbody.linearVelocity = playerVelocity;
 
-            // Get the current scale
-            Vector3 scale = transform.localScale;
-
             // Flip the player sprite based on horizontal movement
             if (controlDirection_x < 0)
             {
-                // transform.localScale = new Vector3(-1, 1, 1);
-                scale.x = -Mathf.Abs(scale.x); // Ensure X is negative - it will keep the current size
+                transform.localScale = new Vector3(-0.2f, 0.2f, 0.2f);
             }
             else if (controlDirection_x > 0)
             {
-                // transform.localScale = new Vector3(1, 1, 1);
-                scale.x = Mathf.Abs(scale.x); // Ensure X is positive - it will keep the current size
+                transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
             }
-
-            // Apply the modified scale back to the player
-            transform.localScale = scale;
         }
 
         private void ClampPositionWithinCameraBounds()
