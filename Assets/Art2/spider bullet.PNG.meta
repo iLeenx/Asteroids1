@@ -834,7 +834,36 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spider bullet_0: -1374889566688099146
+      spider bullet_1: 1312298623127565110
+      spider bullet_10: -8568248952922653122
+      spider bullet_11: -3792048240469345071
+      spider bullet_12: 5431841253832358903
+      spider bullet_13: 8246290948224218489
+      spider bullet_14: 837068724274771848
+      spider bullet_15: -6271576068108848149
+      spider bullet_16: 2618455872253201137
+      spider bullet_17: 92590094402431028
+      spider bullet_18: -5954861770845315574
+      spider bullet_19: -1974510467889124775
+      spider bullet_2: 757762444906292260
+      spider bullet_20: 4731992138911793942
+      spider bullet_21: 8664378155156483551
+      spider bullet_22: 7430087967196570235
+      spider bullet_23: -2178251299011886951
+      spider bullet_24: -3157116589252170372
+      spider bullet_25: -6894150000494438565
+      spider bullet_26: 8130861325976254930
+      spider bullet_27: 4221109617595174331
+      spider bullet_28: 6255034163345561760
+      spider bullet_3: 7060109469438908431
+      spider bullet_4: -371904422823188058
+      spider bullet_5: -3268354166337710257
+      spider bullet_6: 48572012846492115
+      spider bullet_7: -3472422128256668754
+      spider bullet_8: 258775299532036661
+      spider bullet_9: 4484037406286952634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

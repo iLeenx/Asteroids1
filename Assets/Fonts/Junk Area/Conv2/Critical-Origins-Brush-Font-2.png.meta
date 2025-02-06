@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Critical-Origins-Brush-Font-2_0: 8691547284650594233
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

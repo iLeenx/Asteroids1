@@ -1,7 +1,11 @@
 using UnityEngine;
 namespace Descent{
-public class Status : MonoBehaviour
+
+    public class Status : MonoBehaviour
     {
+        // Singleton instance
+        public static Status Instance { get; private set; }
+
         // Fuel settings
         [Header("Fuel Settings")]
         [SerializeField] private float maxFuel = 100f;
@@ -17,6 +21,8 @@ public class Status : MonoBehaviour
         // Death settings
         [Header("Death")]
         [SerializeField] private GameObject deathEffect;
+        
+        [SerializeField] private GameObject LoseScreen;
 
         private float currentFuel;
         private GameObject[] fuelBars;
@@ -71,7 +77,6 @@ public class Status : MonoBehaviour
                 }
             }
         }
-
         public void AddFuel(float amount)
         {
             currentFuel = Mathf.Clamp(currentFuel + amount, 0, maxFuel);
@@ -93,6 +98,8 @@ public class Status : MonoBehaviour
             }
             Destroy(gameObject);
             Debug.Log("Player died due to fuel depletion!");
+
+            LoseScreen.SetActive(true);
         }
     }
 }
