@@ -7,12 +7,14 @@ namespace Descent
         [SerializeField] float runSpeed = 2f;
         Collider2D myCollider;
 
-        private float horizontalLimit = 7f; // Horizontal movement limit relative to the camera center
-        private float maxVerticalLimit; // Upper vertical movement limit
-        private float minVerticalLimit; // Lower vertical movement limit
+        public float horizontalLimit = 7f; // Horizontal movement limit relative to the camera center
+        public float maxVerticalLimit; // Upper vertical movement limit
+        public float minVerticalLimit; // Lower vertical movement limit
 
-        private Camera mainCamera;
-        private CameraMovement cameraMovement;
+        public Camera mainCamera;
+        public CameraMovement cameraMovement;
+
+        public Status status;
 
         void Start()
         {
@@ -76,6 +78,26 @@ namespace Descent
             // Update the player's vertical limits based on the camera's updated range
             minVerticalLimit = newMinLimit;
             maxVerticalLimit = newMaxLimit;
+        }
+
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.collider.CompareTag("Bullet"))
+            {
+                status.ReduceFuel(5);
+                OB_SFX.instance.PlaySFX("Test",transform.position);
+            }
+        }
+
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("Bullet"))
+            {
+                status.ReduceFuel(5);
+                OB_SFX.instance.PlaySFX("Test", transform.position);
+            }
         }
     }
 }

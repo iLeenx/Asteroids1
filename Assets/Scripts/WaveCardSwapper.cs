@@ -81,57 +81,60 @@ namespace Descent
 
         private IEnumerator AnimateCardSwap()
         {
-            isAnimating = true;
-            int nextWave = currentWave + 1;
-
-            // Activate and prepare NEW CARD
-            nextCard.gameObject.SetActive(true);
-            nextCardCanvas.sortingOrder = 2;
-            nextCardText.text = nextWave.ToString("D2");
-
-            if (waveUpSound) waveUpSound.Play();
-
-            // Start flicker ONLY on new card
-            if (flickerCoroutine != null) StopCoroutine(flickerCoroutine);
-            flickerCoroutine = StartCoroutine(FlickerCard(nextCardPanel, nextCardText));
-
-            float elapsed = 0;
-            Vector2 nextStartPos = originalPosition - moveOffset;
-
-            while (elapsed < animationDuration)
+            if (!UIManager.Instance.IsMenuActive)
             {
-                float progress = positionCurve.Evaluate(elapsed / animationDuration);
-                float scaleProgress = scaleCurve.Evaluate(elapsed / animationDuration);
+                isAnimating = true;
+                int nextWave = currentWave + 1;
 
-                // Animate current card out (no visual changes)
-                currentCard.anchoredPosition = Vector2.Lerp(originalPosition, originalPosition + moveOffset, progress);
-                currentCard.localScale = Vector3.Lerp(Vector3.one, Vector3.one * cardScaleFactor, progress);
+                // Activate and prepare NEW CARD
+                nextCard.gameObject.SetActive(true);
+                nextCardCanvas.sortingOrder = 2;
+                nextCardText.text = nextWave.ToString("D2");
 
-                // Animate new card in (with flicker)
-                nextCard.anchoredPosition = Vector2.Lerp(nextStartPos, originalPosition, progress);
-                nextCard.localScale = Vector3.Lerp(Vector3.one * cardScaleFactor, Vector3.one, progress);
+                if (waveUpSound) waveUpSound.Play();
 
-                elapsed += Time.deltaTime;
-                yield return null;
+                // Start flicker ONLY on new card
+                if (flickerCoroutine != null) StopCoroutine(flickerCoroutine);
+                flickerCoroutine = StartCoroutine(FlickerCard(nextCardPanel, nextCardText));
+
+                float elapsed = 0;
+                Vector2 nextStartPos = originalPosition - moveOffset;
+
+                while (elapsed < animationDuration)
+                {
+                    float progress = positionCurve.Evaluate(elapsed / animationDuration);
+                    float scaleProgress = scaleCurve.Evaluate(elapsed / animationDuration);
+
+                    // Animate current card out (no visual changes)
+                    currentCard.anchoredPosition = Vector2.Lerp(originalPosition, originalPosition + moveOffset, progress);
+                    currentCard.localScale = Vector3.Lerp(Vector3.one, Vector3.one * cardScaleFactor, progress);
+
+                    // Animate new card in (with flicker)
+                    nextCard.anchoredPosition = Vector2.Lerp(nextStartPos, originalPosition, progress);
+                    nextCard.localScale = Vector3.Lerp(Vector3.one * cardScaleFactor, Vector3.one, progress);
+
+                    elapsed += Time.deltaTime;
+                    yield return null;
+                }
+
+                // Stop flicker and reset new card's appearance
+                if (flickerCoroutine != null)
+                {
+                    StopCoroutine(flickerCoroutine);
+                    nextCardPanel.color = originalPanelColor;
+                    nextCardText.color = originalTextColor;
+                }
+
+                // Swap references
+                (currentCard, nextCard) = (nextCard, currentCard);
+                (currentCardText, nextCardText) = (nextCardText, currentCardText);
+                (currentCardCanvas, nextCardCanvas) = (nextCardCanvas, currentCardCanvas);
+                (currentCardPanel, nextCardPanel) = (nextCardPanel, currentCardPanel);
+
+                currentWave = nextWave;
+                ResetCardState();
+                isAnimating = false;
             }
-
-            // Stop flicker and reset new card's appearance
-            if (flickerCoroutine != null)
-            {
-                StopCoroutine(flickerCoroutine);
-                nextCardPanel.color = originalPanelColor;
-                nextCardText.color = originalTextColor;
-            }
-
-            // Swap references
-            (currentCard, nextCard) = (nextCard, currentCard);
-            (currentCardText, nextCardText) = (nextCardText, currentCardText);
-            (currentCardCanvas, nextCardCanvas) = (nextCardCanvas, currentCardCanvas);
-            (currentCardPanel, nextCardPanel) = (nextCardPanel, currentCardPanel);
-
-            currentWave = nextWave;
-            ResetCardState();
-            isAnimating = false;
         }
 
         private IEnumerator FlickerCard(Image targetPanel, TextMeshProUGUI targetText)

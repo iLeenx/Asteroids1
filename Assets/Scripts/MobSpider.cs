@@ -1,4 +1,6 @@
 using UnityEngine;
+using VInspector;
+
 namespace Descent
 {
     public class MobSpider : MonoBehaviour
@@ -9,14 +11,14 @@ namespace Descent
         public Vector2 verticalLimits = new Vector2(-10, 10); // Limits for vertical movement along the wall
         public float attackRange = 1f; // Range within which the mob can attack the player
 
-        private bool isOnLeftWall; // Determines if the mob is on the left wall
+        public bool isOnLeftWall; // Determines if the mob is on the left wall
 
         [Header("---Projectile---")]
 
         public GameObject projectilePrefab; // The projectile prefab
         public float projectileSpeed = 5f; // Speed of the projectile
         public float shootInterval = 2f; // Time between projectile shots
-        private float lastShootTime; // Tracks the last time the mob shot a projectile
+        public float lastShootTime; // Tracks the last time the mob shot a projectile
 
 
 
@@ -28,6 +30,8 @@ namespace Descent
 
         private void Update()
         {
+            if (UIManager.Instance.IsMenuActive) return;
+
             // Move vertically toward the player
             float targetY = Mathf.Clamp(player.position.y, verticalLimits.x, verticalLimits.y);
             Vector3 targetPosition = new Vector3(transform.position.x, targetY, transform.position.z);
@@ -41,8 +45,11 @@ namespace Descent
             }
         }
 
+        [Button]
         private void ShootProjectile()
         {
+            if (UIManager.Instance.IsMenuActive) return;
+
             if (projectilePrefab == null) return;
 
             // Instantiate the projectile
