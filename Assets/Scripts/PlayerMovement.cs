@@ -40,14 +40,20 @@ namespace Descent
             Vector2 playerVelocity = new Vector2(controlDirection_x * runSpeed, controlDirection_y * runSpeed);
             myRigidbody.linearVelocity = playerVelocity;
 
+            // Get the current scale
+            Vector3 scale = transform.localScale;
+
             // Flip the player sprite based on horizontal movement
             if (controlDirection_x < 0)
             {
-                transform.localScale = new Vector3(-0.2f, 0.2f, 0.2f);
+                // transform.localScale = new Vector3(-0.2f, 0.2f, 0.2f);
+                scale.x = -Mathf.Abs(scale.x); // Ensure X is negative - it will keep the current size
             }
             else if (controlDirection_x > 0)
             {
-                transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+                // transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+                scale.x = Mathf.Abs(scale.x); // Ensure X is positive - it will keep the current size
+
             }
         }
 
