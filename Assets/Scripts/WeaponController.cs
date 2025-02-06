@@ -74,8 +74,6 @@ public class WeaponController : MonoBehaviour
 
     void FireWeapon()
     {
-        if (UIManager.Instance.IsMenuActive) return;
-
         if (!infiniteAmmo && currentAmmo <= 0)
         {
             Debug.Log("Out of Ammo!");

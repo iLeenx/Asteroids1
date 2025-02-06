@@ -133,7 +133,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -166,6 +166,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 5
-  shootSound: {fileID: 8300000, guid: afae59aa47e57d9448652bc565752d8c, type: 3}
-  hitPlayerSound: {fileID: 8300000, guid: 1372a5c9b2a3d844d99d11362a2d34d1, type: 3}
-  missSound: {fileID: 0}
