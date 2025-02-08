@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spider bullet poisen_0: 6459051493951384121
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
