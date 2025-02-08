@@ -18,14 +18,12 @@ namespace Descent{
         [SerializeField] private float spacing = 5f;
         [SerializeField] private Vector2 barOffset = new Vector2(0, 0);
 
-        // Death settings
-        [Header("Death")]
-        [SerializeField] private GameObject deathEffect;
-        
         [SerializeField] private GameObject LoseScreen;
 
-        private float currentFuel;
-        private GameObject[] fuelBars;
+        [SerializeField] private GameObject player;
+
+        public float currentFuel;
+        public GameObject[] fuelBars;
 
         void Start()
         {
@@ -68,15 +66,34 @@ namespace Descent{
 
         void UpdateFuelBars()
         {
-            int activeBars = Mathf.CeilToInt(currentFuel / 10); // Change from Floor to Ceil to fix the off-by-one issue
-            for (int i = 0; i < 10; i++)
+            try
             {
-                if (fuelBars[i] != null)
+                if (fuelBars == null || fuelBars.Length == 0)
                 {
-                    fuelBars[i].SetActive(i < activeBars);
+                    // Debug.LogWarning("[Status] fuelBars array is null or empty. Make sure it is assigned in the Inspector.");
+                    return;
+                }
+
+                int activeBars = Mathf.CeilToInt(currentFuel / 10); // Using Ceil to fix off-by-one issue
+
+                for (int i = 0; i < fuelBars.Length; i++) // Use `fuelBars.Length` to prevent out-of-bounds errors
+                {
+                    if (fuelBars[i] != null)
+                    {
+                        fuelBars[i].SetActive(i < activeBars);
+                    }
+                    else
+                    {
+                        // Debug.LogWarning($"[Status] fuelBars[{i}] is NULL. Check the Inspector setup.");
+                    }
                 }
             }
+            catch (System.Exception ex)
+            {
+                Debug.LogError($"[Status] Exception in UpdateFuelBars: {ex.Message}\n{ex.StackTrace}");
+            }
         }
+
         public void AddFuel(float amount)
         {
             currentFuel = Mathf.Clamp(currentFuel + amount, 0, maxFuel);
@@ -92,11 +109,13 @@ namespace Descent{
 
         void Die()
         {
-            if (deathEffect != null)
-            {
-                Instantiate(deathEffect, transform.position, Quaternion.identity);
-            }
-            Destroy(gameObject);
+            //Instantiate(deathEffect, transform.position, Quaternion.identity);
+            OB_VFX.Instance.PlayVFX("CFXR2 Skull Head Alt", player.transform.position ,Quaternion.identity, 1f,1f,0f);
+            
+
+            //Destroy(gameObject);
+
+
             Debug.Log("Player died due to fuel depletion!");
 
             LoseScreen.SetActive(true);

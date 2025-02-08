@@ -2,9 +2,22 @@ using UnityEngine;
 
 public class WinningTrigger : MonoBehaviour
 {
+    private void Update()
+    {
+        GameObject[] mobs = GameObject.FindGameObjectsWithTag("Mob");
+
+        // Check if all are destroyed
+        if (mobs.Length == 0)
+        {
+            enabled = false; // Stop checking once triggered
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        GameObject[] mobs = GameObject.FindGameObjectsWithTag("Mob");
+
+        if (other.CompareTag("Player") && mobs.Length == 0)
         {
             GameObject canvasUI = GameObject.Find("CANVAS_UI_SCREENS"); // Find the parent Canvas
             if (canvasUI != null)

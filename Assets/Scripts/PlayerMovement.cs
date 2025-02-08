@@ -10,6 +10,7 @@ namespace Descent
         public float horizontalLimit = 7f; // Horizontal movement limit relative to the camera center
         public float maxVerticalLimit; // Upper vertical movement limit
         public float minVerticalLimit; // Lower vertical movement limit
+        public float FuelReduceBySpiderBullet; // Lower vertical movement limit
 
         public Camera mainCamera;
         public CameraMovement cameraMovement;
@@ -79,7 +80,7 @@ namespace Descent
         {
             if (collision.collider.CompareTag("Bullet"))
             {
-                status.ReduceFuel(5);
+                status.ReduceFuel(FuelReduceBySpiderBullet);
                 OB_SFX.instance.PlaySFX("Test",transform.position);
             }
         }
@@ -89,7 +90,7 @@ namespace Descent
         {
             if (other.CompareTag("Bullet"))
             {
-                status.ReduceFuel(5);
+                status.ReduceFuel(FuelReduceBySpiderBullet);
                 OB_SFX.instance.PlaySFX("Test", transform.position);
             }
         }

@@ -3,11 +3,21 @@ using UnityEngine;
 public class WinCondition : MonoBehaviour
 {
     public GameObject winningTrigger; // Assign the "Winning Trigger" in the Inspector
+    public bool isStarted = false;
 
     void Update()
     {
-        CheckWinCondition();
+        if (isStarted)
+        {
+            CheckWinCondition();
+        }
     }
+
+    public void StartCheckingGameState()
+    {
+        isStarted = true;
+    }
+
 
     void CheckWinCondition()
     {

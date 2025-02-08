@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6e770e43d695fec459bce8137d9a4cac
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/LocalResources/ScriptTemplates/C#
+    Custom Editor-NewCustomEditor.cs.txt
+  uploadId: 705496

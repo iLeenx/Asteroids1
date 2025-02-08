@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 141d99c7a7ed4103894f647f9394cc21
+timeCreated: 1696879260
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/Scripts/Editor/Actions/CreateMaterialFromTexture.cs
+  uploadId: 705496

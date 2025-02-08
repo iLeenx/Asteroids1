@@ -8,6 +8,13 @@ namespace Descent{
 
         private WaveCardSwapper waveCardSwapper;
 
+        public enum WaveTriggerType
+        {
+            Normal,
+            Winning
+        }
+        public WaveTriggerType triggerType = WaveTriggerType.Normal; // Default to Normal
+
         private void Start()
         {
             waveCardSwapper = FindFirstObjectByType<WaveCardSwapper>();
@@ -26,21 +33,26 @@ namespace Descent{
         {
             if (other.CompareTag("Player"))
             {
-                Debug.Log("[WaveTrigger] Player triggered a new wave!");
-
-                cameraMovement.TransitionToNextWave(nextWaveMinY, nextWaveMaxY);
-
-                if (waveCardSwapper != null)
+                if (triggerType == WaveTriggerType.Normal)
                 {
-                    Debug.Log("[WaveTrigger] Calling SwapWave()");
-                    waveCardSwapper.SwapWave(); // ✅ FIXED: Call the correct function
-                }
-                else
-                {
-                    Debug.LogError("[WaveTrigger] waveCardSwapper is NULL. Wave indicator won't update.");
-                }
+                    if (other.CompareTag("Player"))
 
-                Destroy(gameObject);
+                        Debug.Log("[WaveTrigger] Player triggered a new wave!");
+
+                    cameraMovement.TransitionToNextWave(nextWaveMinY, nextWaveMaxY);
+
+                    if (waveCardSwapper != null)
+                    {
+                        Debug.Log("[WaveTrigger] Calling SwapWave()");
+                        waveCardSwapper.SwapWave(); // ✅ FIXED: Call the correct function
+                    }
+                    else
+                    {
+                        Debug.LogError("[WaveTrigger] waveCardSwapper is NULL. Wave indicator won't update.");
+                    }
+
+                    Destroy(gameObject);
+                }
             }
         }
     }

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1d5ee779984a6e64a8727d0234f403ee
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/LocalResources/ScriptTemplates/Jobs/Jobs
+    IJobFor Burst-NewJob.cs.txt
+  uploadId: 705496

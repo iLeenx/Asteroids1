@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2826321415537145382}
   - component: {fileID: 8266341015886917838}
   - component: {fileID: 6568429235493301077}
+  - component: {fileID: 7786316382874653404}
+  - component: {fileID: 1096234385034333509}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: PlayerBullet
@@ -30,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 4605145424756468326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.3180554, y: -1.0241792, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -230,7 +232,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.93027633, b: 0.82165754, a: 1}
+      key0: {r: 1, g: 0.93027633, b: 0.82165754, a: 0.15686275}
       key1: {r: 1, g: 0.6090461, b: 0, a: 0}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -287,3 +289,54 @@ MonoBehaviour:
   maxHealth: 1
   currentHealth: 1
   destroyOnZeroHealth: 1
+--- !u!114 &7786316382874653404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4605145424756468326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d35fb2db8b21c4582fe72a4367bcba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitForParticlesToEnd: 0
+  destroyDelay: 0
+  enableDominantTimer: 1
+  dominantDuration: 1
+--- !u!114 &1096234385034333509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4605145424756468326}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab9c1f632741d149ab03a39bf0d3a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+  - doOnEnable: 1
+    doOnDisable: 0
+    vfx:
+    - effectName: CFXR3 Fire Explosion B
+      offset: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+      scaleMultiplier: 1
+    sfx: []
+    cameraShake:
+    - shakeType: 2D
+      shakeIntensity: 0.3
+      shakeDuration: 0.1
+      shakeCooldown: 0
+  - doOnEnable: 0
+    doOnDisable: 1
+    vfx:
+    - effectName: CFXR3 Fire Explosion B
+      offset: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+      scaleMultiplier: 1
+    sfx: []
+    cameraShake: []

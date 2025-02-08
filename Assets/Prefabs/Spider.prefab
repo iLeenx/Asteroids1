@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4505443109272058015}
   - component: {fileID: 2468487145804511720}
   - component: {fileID: 8468851803747774818}
+  - component: {fileID: 559323842951478623}
   m_Layer: 7
   m_Name: Spider
   m_TagString: Mob
@@ -193,3 +194,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &559323842951478623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4421911731480527722}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab9c1f632741d149ab03a39bf0d3a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+  - doOnEnable: 0
+    doOnDisable: 1
+    vfx:
+    - effectName: CFXR2 Skull Head Alt
+      offset: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+      scaleMultiplier: 1
+    - effectName: CFXR Hit A (Red)
+      offset: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+      scaleMultiplier: 1
+    sfx:
+    - audioName: HitPlayer
+      volume: 0.1
+      pitchOffset: 0.1
+      cooldown: 0
+    cameraShake: []

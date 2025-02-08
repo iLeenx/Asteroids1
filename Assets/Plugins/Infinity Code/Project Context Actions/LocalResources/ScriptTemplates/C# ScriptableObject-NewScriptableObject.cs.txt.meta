@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 916d6f3ac1b58c448acaa567865e763a
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/LocalResources/ScriptTemplates/C#
+    ScriptableObject-NewScriptableObject.cs.txt
+  uploadId: 705496

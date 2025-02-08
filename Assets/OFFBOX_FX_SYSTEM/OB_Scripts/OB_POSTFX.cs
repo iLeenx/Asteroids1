@@ -72,6 +72,7 @@ public class OB_POSTFX : MonoBehaviour
     /// <summary>
     /// Triggers a post-processing effect from the pool.
     /// </summary>
+    [Button]
     public void TriggerEffect(string effectName, float duration, float weight)
     {
         if (!effectPool.ContainsKey(effectName))

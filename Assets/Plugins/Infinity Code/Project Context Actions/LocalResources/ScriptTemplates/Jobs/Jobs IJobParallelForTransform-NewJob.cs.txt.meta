@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bc68644dddd92184992cd63b42d02463
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/LocalResources/ScriptTemplates/Jobs/Jobs
+    IJobParallelForTransform-NewJob.cs.txt
+  uploadId: 705496

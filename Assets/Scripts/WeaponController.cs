@@ -92,7 +92,9 @@ public class WeaponController : MonoBehaviour
                 0
             );
 
-            GameObject projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+            Quaternion projectileRotation = Quaternion.Euler(0, 0, fireAngle);
+            GameObject projectile = Instantiate(projectilePrefab, firePoint.position, projectileRotation);
+
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
