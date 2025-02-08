@@ -10,6 +10,7 @@ TagManager:
   - Bullet
   - WaveTrigger
   - PlayerBullet
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -49,6 +50,9 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foregrounc
+    uniqueID: 3096538139
     locked: 0
   m_RenderingLayers:
   - Default

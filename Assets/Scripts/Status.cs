@@ -1,4 +1,7 @@
 using UnityEngine;
+
+// Make fuel sounds the more it deplates
+
 namespace Descent{
 
     public class Status : MonoBehaviour

@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using TMPro; // Required for TextMeshPro
 
+// lock at 4 axis X style
+
 public class WeaponController : MonoBehaviour
 {
     [Header("Weapon Settings")]
