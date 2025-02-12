@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using TMPro; // Required for TextMeshPro
 
+// lock at 4 axis X style
+
 public class WeaponController : MonoBehaviour
 {
     [Header("Weapon Settings")]
@@ -74,6 +76,8 @@ public class WeaponController : MonoBehaviour
 
     void FireWeapon()
     {
+        if (UIManager.Instance.IsMenuActive) return;
+
         if (!infiniteAmmo && currentAmmo <= 0)
         {
             Debug.Log("Out of Ammo!");
@@ -90,7 +94,9 @@ public class WeaponController : MonoBehaviour
                 0
             );
 
-            GameObject projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+            Quaternion projectileRotation = Quaternion.Euler(0, 0, fireAngle);
+            GameObject projectile = Instantiate(projectilePrefab, firePoint.position, projectileRotation);
+
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             if (rb != null)
             {

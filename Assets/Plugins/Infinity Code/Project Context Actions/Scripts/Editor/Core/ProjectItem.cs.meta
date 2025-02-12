@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 444987f17f5d46f44a0df40dfdd8c308
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/Scripts/Editor/Core/ProjectItem.cs
+  uploadId: 705496

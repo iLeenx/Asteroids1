@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 941276965efb39f4a95431ca989783df
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/LocalResources/ScriptTemplates/Jobs/Jobs
+    IJob-NewJob.cs.txt
+  uploadId: 705496

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 945537fe6e534e642a3d6f64ae1576f8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/Scripts/Editor/Actions/CreateCustomEditor.cs
+  uploadId: 705496

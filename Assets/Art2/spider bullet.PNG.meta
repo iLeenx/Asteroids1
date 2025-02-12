@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 9ef4a70cd45e86c42a2e095eba719071
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1374889566688099146
+    second: spider bullet_0
+  - first:
+      213: 1312298623127565110
+    second: spider bullet_1
+  - first:
+      213: 757762444906292260
+    second: spider bullet_2
+  - first:
+      213: 7060109469438908431
+    second: spider bullet_3
+  - first:
+      213: -371904422823188058
+    second: spider bullet_4
+  - first:
+      213: -3268354166337710257
+    second: spider bullet_5
+  - first:
+      213: 48572012846492115
+    second: spider bullet_6
+  - first:
+      213: -3472422128256668754
+    second: spider bullet_7
+  - first:
+      213: 258775299532036661
+    second: spider bullet_8
+  - first:
+      213: 4484037406286952634
+    second: spider bullet_9
+  - first:
+      213: -8568248952922653122
+    second: spider bullet_10
+  - first:
+      213: -3792048240469345071
+    second: spider bullet_11
+  - first:
+      213: 5431841253832358903
+    second: spider bullet_12
+  - first:
+      213: 8246290948224218489
+    second: spider bullet_13
+  - first:
+      213: 837068724274771848
+    second: spider bullet_14
+  - first:
+      213: -6271576068108848149
+    second: spider bullet_15
+  - first:
+      213: 2618455872253201137
+    second: spider bullet_16
+  - first:
+      213: 92590094402431028
+    second: spider bullet_17
+  - first:
+      213: -5954861770845315574
+    second: spider bullet_18
+  - first:
+      213: -1974510467889124775
+    second: spider bullet_19
+  - first:
+      213: 4731992138911793942
+    second: spider bullet_20
+  - first:
+      213: 8664378155156483551
+    second: spider bullet_21
+  - first:
+      213: 7430087967196570235
+    second: spider bullet_22
+  - first:
+      213: -2178251299011886951
+    second: spider bullet_23
+  - first:
+      213: -3157116589252170372
+    second: spider bullet_24
+  - first:
+      213: -6894150000494438565
+    second: spider bullet_25
+  - first:
+      213: 8130861325976254930
+    second: spider bullet_26
+  - first:
+      213: 4221109617595174331
+    second: spider bullet_27
+  - first:
+      213: 6255034163345561760
+    second: spider bullet_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spider bullet_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 942
+        width: 126
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b44a2c39396bece0800000000000000
+      internalID: -1374889566688099146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 933
+        width: 105
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633b0c615a8363210800000000000000
+      internalID: 1312298623127565110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_2
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 585
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42465c8cdec148a00800000000000000
+      internalID: 757762444906292260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_3
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 585
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f081749082c8af160800000000000000
+      internalID: 7060109469438908431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_4
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 590
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a92a3bd5eab6daf0800000000000000
+      internalID: -371904422823188058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_5
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 602
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47d543c33974a2d0800000000000000
+      internalID: -3268354166337710257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_6
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 600
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9adb30dff8ca000800000000000000
+      internalID: 48572012846492115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_7
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 598
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab2e07d87a7fcfc0800000000000000
+      internalID: -3472422128256668754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_8
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 272
+        width: 660
+        height: 615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a904d83ca579300800000000000000
+      internalID: 258775299532036661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_9
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 448
+        width: 121
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab83c4973408a3e30800000000000000
+      internalID: 4484037406286952634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_10
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 504
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ebeed49f6771980800000000000000
+      internalID: -8568248952922653122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_11
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 582
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcfda76730ff5bc0800000000000000
+      internalID: -3792048240469345071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_12
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 587
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb7dfa57d6c16b40800000000000000
+      internalID: 5431841253832358903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_13
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 508
+        width: 76
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9757c6b3de5b07270800000000000000
+      internalID: 8246290948224218489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_14
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 503
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887bcfad19ddd9b00800000000000000
+      internalID: 837068724274771848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_15
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 511
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3f7865bc2e6f8a0800000000000000
+      internalID: -6271576068108848149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_16
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 492
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa00bd1ebf965420800000000000000
+      internalID: 2618455872253201137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_17
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 544
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438a3964332f84100800000000000000
+      internalID: 92590094402431028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_18
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 533
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e163605c41c5da0800000000000000
+      internalID: -5954861770845315574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_19
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 489
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95aad2cd0312994e0800000000000000
+      internalID: -1974510467889124775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_20
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 465
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61347c777c96ba140800000000000000
+      internalID: 4731992138911793942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_21
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 497
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdda1c9b60e0e3870800000000000000
+      internalID: 8664378155156483551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_22
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 462
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72e7aec3a9fc1760800000000000000
+      internalID: 7430087967196570235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_23
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 469
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9900dd20cfb45c1e0800000000000000
+      internalID: -2178251299011886951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_24
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 465
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7da12f603baf24d0800000000000000
+      internalID: -3157116589252170372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_25
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 466
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b571540f91f0350a0800000000000000
+      internalID: -6894150000494438565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_26
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 442
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9b6ccfb4f96d070800000000000000
+      internalID: 8130861325976254930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_27
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 457
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbdceb235d4649a30800000000000000
+      internalID: 4221109617595174331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spider bullet_28
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 435
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a815245e685ec650800000000000000
+      internalID: 6255034163345561760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spider bullet_0: -1374889566688099146
+      spider bullet_1: 1312298623127565110
+      spider bullet_10: -8568248952922653122
+      spider bullet_11: -3792048240469345071
+      spider bullet_12: 5431841253832358903
+      spider bullet_13: 8246290948224218489
+      spider bullet_14: 837068724274771848
+      spider bullet_15: -6271576068108848149
+      spider bullet_16: 2618455872253201137
+      spider bullet_17: 92590094402431028
+      spider bullet_18: -5954861770845315574
+      spider bullet_19: -1974510467889124775
+      spider bullet_2: 757762444906292260
+      spider bullet_20: 4731992138911793942
+      spider bullet_21: 8664378155156483551
+      spider bullet_22: 7430087967196570235
+      spider bullet_23: -2178251299011886951
+      spider bullet_24: -3157116589252170372
+      spider bullet_25: -6894150000494438565
+      spider bullet_26: 8130861325976254930
+      spider bullet_27: 4221109617595174331
+      spider bullet_28: 6255034163345561760
+      spider bullet_3: 7060109469438908431
+      spider bullet_4: -371904422823188058
+      spider bullet_5: -3268354166337710257
+      spider bullet_6: 48572012846492115
+      spider bullet_7: -3472422128256668754
+      spider bullet_8: 258775299532036661
+      spider bullet_9: 4484037406286952634
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 263ba8cbee0c17040b138d45055c6ced
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/Scripts/Editor/Helpers/GUILayoutUtils.cs
+  uploadId: 705496

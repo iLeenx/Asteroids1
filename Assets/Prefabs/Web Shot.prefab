@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7086441248856666138}
   - component: {fileID: 8516108023281225082}
   - component: {fileID: 1192083383779677614}
+  - component: {fileID: 3548655695306248529}
   m_Layer: 0
   m_Name: Web Shot
   m_TagString: Bullet
@@ -133,7 +134,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -166,3 +167,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 5
+  shootSound: {fileID: 8300000, guid: afae59aa47e57d9448652bc565752d8c, type: 3}
+  hitPlayerSound: {fileID: 8300000, guid: 1372a5c9b2a3d844d99d11362a2d34d1, type: 3}
+  missSound: {fileID: 0}
+--- !u!114 &3548655695306248529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6773961577539732898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab9c1f632741d149ab03a39bf0d3a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+  - doOnEnable: 0
+    doOnDisable: 1
+    vfx: []
+    sfx:
+    - audioName: Miss player
+      volume: 0.2
+      pitchOffset: 0.1
+      cooldown: 0
+    cameraShake: []

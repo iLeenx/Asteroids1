@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1844aace50b64e841b0d9b0d4874e257
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/LocalResources/ScriptTemplates/Enitites/Entities
+    IJobEntity-NewJob.cs.txt
+  uploadId: 705496

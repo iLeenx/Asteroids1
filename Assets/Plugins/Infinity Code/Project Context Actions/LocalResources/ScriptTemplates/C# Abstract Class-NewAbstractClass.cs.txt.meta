@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7c68e3b2aa1455344b952b634756d225
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/LocalResources/ScriptTemplates/C#
+    Abstract Class-NewAbstractClass.cs.txt
+  uploadId: 705496

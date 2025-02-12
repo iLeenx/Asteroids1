@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5f83d2fdc11ad9649b3c7fae8d1b3374
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 267429
+  packageName: Project Context Actions
+  packageVersion: 4.1
+  assetPath: Assets/Plugins/Infinity Code/Project Context Actions/LocalResources/ScriptTemplates/Enitites/Entities
+    IComponentData-NewComponentData.cs.txt
+  uploadId: 705496
