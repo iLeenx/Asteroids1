@@ -86,13 +86,13 @@ namespace Descent
         }
 
 
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            if (other.CompareTag("Bullet"))
-            {
-                status.ReduceFuel(FuelReduceBySpiderBullet);
-                OB_SFX.instance.PlaySFX("Test", transform.position);
-            }
-        }
+        // private void OnTriggerEnter2D(Collider2D other)
+        // {
+        //     if (other.CompareTag("Bullet"))
+        //     {
+        //         status.ReduceFuel(FuelReduceBySpiderBullet);
+        //         OB_SFX.instance.PlaySFX("Test", transform.position);
+        //     }
+        // }
     }
 }

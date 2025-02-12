@@ -60,13 +60,6 @@ public class PlayerShield : MonoBehaviour
             isOnCooldown = false;
         }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        // Destroy any projectile that collides with the shield
-        if (isShieldActive && other.CompareTag("Bullet")) // Ensure bullets have the tag "Bullet"
-        {
-            Destroy(other.gameObject);
-        }
-    }
+    
 }
 }

@@ -23,9 +23,9 @@ namespace Descent
             Destroy(gameObject, lifetime);
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
+        private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.CompareTag("Player"))
+            if (other.gameObject.CompareTag("Player"))
             {
                 Debug.Log("Projectile hit the player!");
 
@@ -37,7 +37,7 @@ namespace Descent
             }
             else
             {
-                Debug.Log("Projectile missed and hit: " + other.tag);
+                Debug.Log("Projectile missed and hit: " + other.gameObject.tag);
 
                 // Play the miss sound when hitting anything other than the player
                 PlaySound(missSound);
