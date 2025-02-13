@@ -58,8 +58,6 @@ public class PlayerShield : MonoBehaviour
             isOnCooldown = true;
             yield return new WaitForSeconds(cooldownTime);
             isOnCooldown = false;
-        }
-
-    
-}
+        }    
+    }
 }
