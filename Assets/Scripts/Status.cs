@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem.HID;
 
 // Make fuel sounds the more it deplates
 
@@ -22,11 +24,14 @@ namespace Descent{
         [SerializeField] private Vector2 barOffset = new Vector2(0, 0);
 
         [SerializeField] private GameObject LoseScreen;
+        [SerializeField] private GameObject HUD;
 
         [SerializeField] private GameObject player;
 
         public float currentFuel;
         public GameObject[] fuelBars;
+
+        private bool isDead = false; // Add this to prevent multiple executions
 
         void Start()
         {
@@ -41,9 +46,9 @@ namespace Descent{
             {
                 UpdateFuel();
             }
-            else
+            else if (!isDead) // Prevent multiple coroutines
             {
-                Die();
+                StartCoroutine(Die());
             }
         }
 
@@ -110,16 +115,22 @@ namespace Descent{
             UpdateFuelBars();
         }
 
-        void Die()
+        IEnumerator Die()
         {
-            //Instantiate(deathEffect, transform.position, Quaternion.identity);
-            OB_VFX.Instance.PlayVFX("CFXR2 Skull Head Alt", player.transform.position ,Quaternion.identity, 1f,1f,0f);
-            
 
-            //Destroy(gameObject);
+            if (isDead) yield break; // Stop if already dead
+            isDead = true;
 
-
+            // Play VFX twice with a slight delay in between (optional)
+            OB_VFX.Instance.PlayVFX("CFXR2 Skull Head Alt", player.transform.position, Quaternion.identity, 1f, 1f, 0f);
+            OB_VFX.Instance.PlayVFX("DeathEffect", player.transform.position, Quaternion.identity, 1f, 1f, 0f);
             Debug.Log("Player died due to fuel depletion!");
+
+            //OB_POSTFX.Instance.p
+
+            player.SetActive(false);
+
+            yield return new WaitForSeconds(2f); // Adjust delay as needed
 
             LoseScreen.SetActive(true);
         }
