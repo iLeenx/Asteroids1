@@ -2118,7 +2118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -2310,7 +2310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -2415,7 +2415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -3147,7 +3147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -3262,7 +3262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -3404,7 +3404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -3491,6 +3491,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1023103932}
+    - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
+      propertyPath: verticalLimits.x
+      value: -120
+      objectReference: {fileID: 0}
     - target: {fileID: 8721873943326981416, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.52
@@ -3842,7 +3846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -4176,7 +4180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -4373,7 +4377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -4731,7 +4735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -5002,7 +5006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -5194,7 +5198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -5299,7 +5303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -6181,7 +6185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -7697,7 +7701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -8515,7 +8519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -8612,7 +8616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -10408,7 +10412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -11051,7 +11055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -11342,7 +11346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -11629,7 +11633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -11731,7 +11735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -11828,7 +11832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -11969,7 +11973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -12635,7 +12639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -13107,7 +13111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -13860,7 +13864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -14045,7 +14049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -14142,7 +14146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -14739,7 +14743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -15278,7 +15282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -15748,6 +15752,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1023103932}
+    - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
+      propertyPath: verticalLimits.x
+      value: -120
+      objectReference: {fileID: 0}
     - target: {fileID: 8721873943326981416, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.43
@@ -16009,7 +16017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -16260,7 +16268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -16539,7 +16547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -17156,7 +17164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
@@ -17261,7 +17269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.x
-      value: -34
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 5509806237524337423, guid: c90d9dc4d1800244dbd929fc20b130dd, type: 3}
       propertyPath: verticalLimits.y
